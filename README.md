@@ -7,3 +7,4 @@
 4. [图片居中问题处理](https://github.com/chen77/CSS-Hack/issues/4)
 5. [img图片底部出现莫名的下边距问题](https://github.com/chen77/CSS-Hack/issues/5)
 6. [滚动条美化css](https://github.com/chen77/CSS-Hack/issues/6)
+7. [清除浮动备忘](https://github.com/chen77/CSS-Hack/issues/7)
