@@ -10,8 +10,6 @@
 8. [文字内容溢出用(…)省略号表示](https://github.com/chen77/CSS-Hack/issues/8)
 
 # 移动端
-# webApp02-bugs
-  通过一套简单的webapp，把一些基本的坑给踩一遍~~
 ####【1】布局时避免因border&&padding值的重计算，[box-sizing属性](http://zh.learnlayout.com/box-sizing.html)
 ```css
 *{
