@@ -57,3 +57,125 @@ a, img {
   }
   /*opacity: 1;是为了修改FF的默认透明度导致颜色偏差;*/
   ```
+###【6】手机上select控件优化
+```css
+.custom-select {
+  position: relative;
+}
+.custom-select select {
+  width:100%;
+  margin:0;
+  background:none;
+  border: 1px solid transparent;
+  outline: none;
+  /* Prefixed box-sizing rules necessary for older browsers */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Remove select styling */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Font size must the 16px or larger to prevent iOS page zoom on focus */
+  /* General select styles: change as needed */
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  color: #444;
+  padding: .6em 1.9em .5em .8em;
+  line-height:1.3;
+}
+.custom-select::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 50%;
+  right: 8px;
+  margin-top:-4px;
+  border:8px solid #929497;
+  border-width: 8px 5px 8px;
+  border-color: #929497 transparent transparent transparent;
+  z-index: 2;
+  pointer-events:none;
+}
+/* Hover style */
+.custom-select:hover {
+  border:1px solid #888;
+}
+/* Focus style */
+.custom-select select:focus {
+  outline:none;
+  box-shadow: 0 0 1px 3px rgba(180,222,250, 1);
+  background-color:transparent;
+  color: #222;
+  border:1px solid #aaa;
+}
+/* Set options to normal weight */
+.custom-select option {
+  font-weight:normal;
+}
+x:-o-prefocus, .custom-select::after {
+  display:none;
+}    
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+  .custom-select select::-ms-expand {
+    display: none;
+  }
+  .custom-select select:focus::-ms-value {
+    background: transparent;
+    color: #222;
+  }
+}  
+@-moz-document url-prefix() { 
+  .custom-select {
+    overflow: hidden;
+  }
+  .custom-select select {
+    width: 120%;
+    width: -moz-calc(100% + 3em);
+    width: calc(100% + em);
+  }
+  
+}
+.custom-select select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+```
+###【7】单选按钮radio美化
+```css
+input[type=radio] {
+	position: relative;
+	top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 0;
+    outline: 0 !important;
+    line-height: 20px;
+    color: #d8d8d8;
+}
+input[type=radio]:after {
+    content: "";
+    display:block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  text-align: center;
+  line-height: 14px;
+  font-size: 16px;
+  color: #fff;
+    border: 3px solid #ddd;
+    background-color: #fff;
+    box-sizing:border-box;
+}
+input[type=radio]:checked:after {
+    content: "L";
+    transform:matrix(-0.766044,-0.642788,-0.642788,0.766044,0,0);
+    -webkit-transform:matrix(-0.766044,-0.642788,-0.642788,0.766044,0,0);
+    border-color: #1857A6;
+    background-color: #1857A6;
+}
+```
