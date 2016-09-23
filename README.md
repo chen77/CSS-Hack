@@ -8,6 +8,7 @@
 6. [滚动条美化css](https://github.com/chen77/CSS-Hack/issues/6)
 7. [清除浮动备忘](https://github.com/chen77/CSS-Hack/issues/7)
 8. [文字内容溢出用(…)省略号表示](https://github.com/chen77/CSS-Hack/issues/8)
+9. [placeholder兼容ie8](https://github.com/chen77/CSS-Hack/issues/9)
 
 # 移动端
 ####【1】布局时避免因border&&padding值的重计算，[box-sizing属性](http://zh.learnlayout.com/box-sizing.html)
