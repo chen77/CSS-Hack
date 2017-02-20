@@ -9,6 +9,7 @@
 7. [清除浮动备忘](https://github.com/chen77/CSS-Hack/issues/7)
 8. [文字内容溢出用(…)省略号表示](https://github.com/chen77/CSS-Hack/issues/8)
 9. [placeholder兼容ie8](https://github.com/chen77/CSS-Hack/issues/9)
+10. [圆角阴影兼容ie8 ](https://github.com/chen77/CSS-Hack/issues/16)
 
 # 移动端
 1. [常见样式bug重置](https://github.com/chen77/CSS-Hack/issues/10)
