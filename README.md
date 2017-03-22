@@ -10,6 +10,7 @@
 8. 文字内容溢出用(…)省略号表示
 9. placeholder兼容ie8
 10. 圆角阴影兼容ie8
+11. select上下居中兼容ie8
 
 # 移动端
 1. [常见样式bug重置](https://github.com/chen77/CSS-Hack/issues/10)
